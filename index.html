@@ -1,0 +1,67 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class='video'>
+        <script src="https://use.fontawesome.com/20603b964f.js"></script>
+        <script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+        <script type="text/javascript">
+            jwplayer.key = '=';
+        </script>
+        <div id="myElement"></div>
+        <script type="text/javascript">
+            jwplayer("myElement").setup({
+                image: "https://content.jwplatform.com/thumbs/xJ7Wcodt-720.jpg",
+                aspectratio: "16:9",
+                width: '100%',
+                aspectratio: '16:9',
+                autostart: false,
+                file: 'https://bigf.bigo.sg/asia_live/V4s7/1HLpbx.mp4',
+                abouttext: 'FILMKACA',
+                aboutlink: 'http://filmkaca.xyz',
+                captions: {
+                    color: '#ffb800',
+                    fontSize: 30,
+                    backgroundOpacity: 0
+                },
+                sharing: {
+                    sites: ['facebook', 'twitter', 'tumblr', 'googleplus', {
+                        icon: '',
+                        src: 'http://www.jwplayer.com/?',
+                        label: 'jwplayer'
+                    }],
+                    code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+                    link: "<?php echo $sharing;?>"
+                }
+            })
+        </script>
+
+        <script>
+            setInterval(() => {
+                const item = document.querySelector('.jw-button-container .jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-logo-button');
+                if (item) {
+                    item.innerHTML = `
+                    
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194" height="31" xml:space="preserve" version="1.1" viewBox="0 0 194 31">
+    <image width="194" height="31" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAUCAYAAABFyTWeAAAAAXNSR0IArs4c6QAAEhZJREFUaEPlmnl4VOW9xz/nnJkzk8lkmyQEQkICCRBBdkRQBBd2pEXRWMSqgJVWvWitqOBS72OlWm+rvVfvrdLWXmuxtV69rRZEKaBIWYUAIYQlQDLZSEKWySSznjn3OefMmgXQ57nP/eO+zzNPJu953/f8lu9vfUdQVVXlokOFoAc16IJgB0JSPkjW8A7x4lv/Pz7VpCn83zN+uWQIFwOAqiqozUdR6nYgKM0guBDShiLl30mo7RME2wgE+2QQ5UtgSCHoqiHo7SKk4U0wIabkY0lKRhC+vrQizEWQ+/VPiJB7uWL6Bgr9Xzj6mxx5qT39AyAYIFhzGMW5H0QPgtiNIHYZ3+0DMQ2ehVLzIqLjRoSB3wHJgSokgl/1txOseAmpaQP08DOKaqPduhB/wQPk5F8BrtOI+6fry3RMhNdXK7cSGvkE+W1vYLrw26gmPgn+hutm3Ih87HHMHX/upSFte2PwWtoKXqDYtBu5em10jTMwC0/h4xS1r0HqOhydP+JeQsqoVRScX4noc0bntwVfZXJBC5W1f2V18Fl9fkzIz+MjCyguHo4k9faEH5yu5sXKs2FGDIhqNN0s+Llv/Ghyc3Op6+pm1T/KaPYHEugvVIOsGzoQvyObx8oq8YYShRdR6sPJIounTCI5Obl/hPaHgPB8LwBE1gfPnSF49hjQjWABaVABYqoDAh2oXdWgehAHz0SpWItgH4A07CkwZyUQ4j/2c0y1LwGhPglUQwJfNU0lZcrPyE/zYzt6U691jW0yn3rXc0vRPlK634s+v+W1q/jX136F4+wzJPs2GcBJ2K2y76SNQ6Z13DHFQ3rLC9EVn5cn47QtZ2nRRiS1Vd/V5VP50cYRLFu5lmukZ5ECtdHT7vnNBKavepjfeZJQkPR58WQFD2TZKS0txWqNhERDyRod7x6v4pWqGIgih0mV5awbWcD8+fOpcHWxavchlB7GIdQ5uQsPY2bN4enKavz9ROmSg7tYv+Ju8vLyE4D2dfxVDAAayjTKBQE1EML7ZRmq34VpQApS3mAIelG7zoOgItjTEUwKgi2bUO3HqK07EbImIxU9mECI8mkxgtreg55EVZ07b+Lvvue5bc540irn90n7a2X3cdeUC6T7P4w+n/vylby54S2yqp8l2bc5Ou/1q/iD2r8CB6ssHLM+yZ1T/WRc+Gl0zfYjMkL6NK4f8nl0rrxa5K0jC1i9+ofk192L6I8pr/T1Eib900/40BcjL3S8nB84bCxbdmcMAHGsvXv8NK9UaSBK5DdQW819ipsVK1bwSUMzP604Ezs0vFR1VrNUcTNh3gKeOVETBYAaChHyeqLrRx7dz4vfW8GQIUMuW+c9DSUKAMXjB5OEZJbwV1/Ad9SJKdmEXJKD/0QV5uI8pAGZ+A9/gZSWgmA2IxVORjl/AOXMhwiSB6nkXsS0cVFiQlsSPUL0QcTFC3ChQ+W18of4p7vn4zh9c5+MvH3oBuaNtzJAiClaB8Cv3yLrnAaATYbdCbBxG3xWNZqcnBwk2c41N9zCdXmnSW3SPIAxNACMK07GYWuLzr3xmZ2kK5+jdPE85LL50RCwI3Q1L/w7zFq95tIA0E4LSzgGgESWVCXIrD1/Z926dfz6RDXvNrZEF0RzmygAFvLMCcMDaM/89XWI7/+e4sICzGaZ8cVFLL/rLrKzM6Pe7VIxv6eAowBw17WTnJOKYBJp23eWQF07qSUDEYJB8HgRUyyImXaUlkbkkpEEzxxBTB8AYoDgsQ9A6EZMScd05f0gGUlhaEuEsHiyDAuVTTGH/cNNd/HUQ6VknflWnwDYXHkFo4dkM8T2xSU9wO+22bGMfYHp06cjSRKpqamYnO9grTVitzYaWkUGOWJhyeNTWfX2RJ587hVKhg2CfbN0AOwMTWaN8iS2N37B3NWP6gDQOVEhVNmHB4ijvj8AaEuKt37Eq+ue4OnyKsq649xKeH/MA8QAoD0K1NZwfdVRVtx9N2mpqSTZbGRkpGMymS/bA/SMlToAtErwwskmskbmoIZUmvacwd/sJn1kDiZZwlqYhe/gOSwjcgievwCqgtJUiyCrmIuK8B/diiB6QPJjHleKaM8JAyDmAcqqFMYXSdS1hNh1zETpzJgC7v/zYn7y+HIGnP12n4zsPZNFliOPovSyvgHg3xy1vLe3pzH4xl8xe/bs6FpvxX8gO5/pV0gf7wmx27uKtWvXYjMFdADs8uSwVllDECkBAJFD+gwBlwmAzH1f8uqy21l+uoGghqg4+9DTgT48gDYdrHPyreZqHnnoIdLT0y9b6RfzCjoAAt4groYOHIUOvSxrKa+n/UQjAyYOoauqmeS8DARPgJRxeSjNLpSmdsQMK4Gqs8gjhhA4dgBEH4LowzxmBmKmEZOULVnRxGzjDgujijKoqW/HIw3jjskVUQYSAWCQ2+VVSbYaXqKq0UpIzGH4gOo4AIzmzQ2/65UDVDgtWAfNYXD+UNrlq0nLvw6x+m1k59N9CszjV3n0Pwex6N4XmTdvHvg72LHnKdZ1fye2vqMde0oKbtFIALXx9QCQqAJbxWFWjB3Fa0FTH00DFdVZE84BEkOA6u5kaGcbk8eMwWqxcMcgBwMHDuwjAb5sbBD1ALVHG8gbm6srLOgLcPzDIwy5Zhj1O06SP3M4oS4foknE72wlZXQuktWMUt8GYpBAdY3hAUQ/8uixSAMNAMTnAJ8eSqbBtJD65k5mjzcz2fHXXgDIPvvtKGD2VIaYWmKUV65ugcaONEYMiiWUiUlgOAfowffGw1czYeHPKBK+6NcDnGkUeH3vHB55Yj0FBQW0d3dzz65DNPgSS7OeIv16AEjcbW1pYqbqY0u2lr2D4vUiiAKibNH/7y8E9KRh1fkqVq5c2UvbkTAVFWYC/hLBGM0BzhysRZIl0rPtpGQl03y6GTlJpv1UM4OvLqC7oQN/axfpxdlc2F2FJUkmdWwevpON0OFGEP36Rx47Amlg7xBwut7Ef51/hBumjWOc72ksasyaDQ+wggFnYznA5gMScyaGkESjRtpdmcS0klgGbABA8wBaGRhLDnWm9bJJ4OVNecxc+ivGpx7qFwCdHoHfHy+ldOWPGTBgAK3dHu7ddYhGn/+iZhQPAIvVarw2zp4jOYBOfTCI4unGlJKqnym2NpPZ3UXz4EI9cQ22XkCQLUh2eyIA5i7kmZP9l4ELDuzgueeeu3xzN05P8Do6AHyeAPWnWti3qQKrLDKoMJOSa4fi7fAgJ5mp3l1NsNND7thcHMOzqdtaSdaYXNTuAL4zLUgSyJKAaAbrlCIkR0qcBzBeqOnkLyeuZ9rYXHL8GxOI7isH+OteCxOKZfKzOvW9oRD6eyI89FcGfvpVkD0n0jBbkmhSiln58HpGmHbFAaB3RNx0dCh5szYwbtw42jxeHQANPn/UgKqfXE3eDbOQ5sYA+nU8gBoIEGxswJw3RFe42ukykusMh86O90QlltxchDBAenmAcInub27G/ffNJMsykiiycsJoHnxQK717Dq1qEBL7Iv0kAjoAXG0eDu6owiTCqa9qMUsCqWlWhozKIb8kB7PFhPt8J962buwZSVhSrHhbu+gor8MsSZhNAmaTiGw1kz57FILFpAMt9GlcGSiA22sBwUyy7E4grj8A5OTkcnWh1k2LG2FT6wWAsOX/dquNztwfMWnSRGw2GyNHjsTs/AOy86ko8gMKmMNgOq9msqr9ceZ1worvLqM7pHLvroN6CIjUKeIv1zPz/gfYnpQWPaN/ABiSjq8CNABQXoYw4SoDv4qiN8cEycjefXu+JGncREJJtkQPMC+xCvDX1jDx4JcsWbyYFLtdD1nap7dd9+UU+kZAOAeA15/fyoLbx1BT2cSJA05kk4hZFEhOMpOWbScjy4ZjUCpdzZ10OtsRQiFkSdQFaTZJmDTQ5DvImjE8+vZoDhDX2u2LtP4A4LVPoXT0zj5dXAIAIlUA8PYOowqYNWuWvk9LantWAbuPK0y7wkDAdYF3CWBm+OljvFx6C9b0jGgIiIgsvgyMEHO5ANBDQCCAdf9uvNfMMEClktA2D2z5COtN81DC5ZzuAYJuJsxPBECkCnj4wQf1KuCb3KP0FKYOgFBI5YN3DlJ5uIFrbyzCKkucPdaIp8ODGAKzqLn4sLJFEUvY4k2SqLt+DSzWZJnC2SVYsw33r42+G0FhsYZB4faoPLZpCc8/dg9aEhgZWgjwZN7BbUXvIQneXiDo2wPAB3tSyJ6ynmnXTte9jWDNJHhqAxZnrA+w7bCJNksJG4u/T506UD/bfqGZxwY7uGrKFFbuPZqQAyS98XPmrf5Rn42gITfOZm9rB1qXThvjZYkbigr4yNkY7gSC5gGyt/0N1+xF+OMqCV1Gfj+2P72Fsuw+AvqzWBUwcd5Cng43grS1Whi5qcXJimV36n2AFNmMXcs/el6oXU43KKKGyG1g1YlmfvvaP3SEFo3IYvLUAtwdHlrrO/C7fXhcXggoSAJYJBHJJOh/NS+hNXVyxwxm6MziBEX12wmMW3WmIcSbFfex5v5byKxalAAAd85DlBZuwISrBwBU5r48hg0b3iIzrhVspIu63et8uJQiTmT+khLLHlKano9eMO04IvMn9yqOTLoORTQqDdXvY07NCZYvuZVHK2uiANDyj+Q3tUbQD/nQF2teRTyAe/I0/lCjtciNNw8+eoDnFsymQk4O3wVorfUAebu2Ik+byVmL4eYjw9tYz/BDu2maewu+CC399AFi3BnfviOHuGfyeBwOI5fob1yyD6Bt9PuC/PcfD1O23+iBay7dkWnDZjUR8gUxSyLBbr+hcEnEYhYwC4I+n5WXxpj5V2DLSGSudfsK0v2xcq8vAv+yW6LKvoblS2aQfnJBNO5qHsA15J+5ffDrWEJxlyrxOUC0FRxXBcS9pL7VxJvH7+fB+TayXf+iP2kJZbD88K1cKw9kz8jxNGpXmOGRcqyMJ6ZN4t+8Iuf9fiORUsGmA+BRPvDFLpwSAOA8Hz1D3vYJLy1ZhNORwy+qao1LTSXI4C+3MvLaGWw3Jcqoa/dObrKZKBs7FW/Yki9WBsYrc3DZXl64dRGjRo26KAD6fmiclHAbGPArvPnql9TVxHrkdruM1ijSwoBu8ZJm+QJ5QzPpaOwka1AKM5dOwGLr/ZsA55mjpB67g2RzUzT2RTSsvb7VpfLIOwXc/cB6rrkyh+TyuWi/QdAI+2ifBc/wl5mTu5N07/vh0i7GyoKfj9HvAjLP/Zgk76Zez7WVdRfglwfvZs1t2WS7fkFIFZge+CO+8sN8P8PKueIxbPcGwntV3VK/VXuK3cPH0qKEomfaNrzKPA0AXi14G35GqTzGA1nJdE2axjs1jdF5eccWfnbbt6nJyOGVqhr039uokPn5FmZdfwPvYTHmwsO/+S8snTKJT7Lz6QqvVWtrWKp2MWHuQp6tPIdP1WjprUbHvp28dPtivXr5pqPXdXCX28f2LSepKKtnYG4ag/LS+PyzkzqDJlHAYhLJz09j6o3DcZ5s4qrZI7Gnxa5D4wnx+/2U79tC5YEP8Lhq8fmNvrfGi8cn0eIbRMnEOSxatAibReSr7X/g8KFdKEqQgJDBlJu+S3F+Ov/47B3q687oso9YQLt0JT/4wQME206y/dP3aGmu7y0DwUxKwWzmzBjPgZ0fsu2chwshO9rt+ZLp08grGs5723dQ5XTqShEFgakF+WQVDmPH/v24urp1aodJAouWLOHjPXupqjG8kR2V0utnMKh4BL//2yZqGhr0+QEifP/OpZjS0tm4+RNOnq0mpIbINYksuflmth87TvmpU1Fac5SAntUfctayv7ycYFDBisriq69i/JQpvL/9C8qOHyeoKGHeYxl1gd3G90pvp7CwsAfvfTn9uLm4r/3+IMTTHUC2SHz8/hHK9tXqAtIUMGxEFt/93lRELRmIpLQX+Q1UMBiktbWVtrY2Alo5FB6iKOoXNdnZ2VgshlW4XJ243VrdryKKAmlp6fqzjo4OPJ5YE0g7QpvXYp+iKLGz++Bb+7GE9nG5XHi9RjKpvTslJYWkpCR9vrvbULTGkHa3r53tdrt1oWssyrJMWnoana7OhDPS0tL0tRpvPp8BbpPJRIbDgUmS9Hnjnap+e6dl7hof2tmRYTabycjI0Glwd7qNS01B0GWjlbEafV1dXX0auLE3HTncQexz0SUSwv8B/yp0PQ/a8mwAAAAASUVORK5CYII="/>
+  </svg>
+`;
+                }
+
+            }, 1000);
+
+            console.log(`
+==================================================
+- Copyright by WWW.ONEKH.ME
+- Owner by: Tith MOUE
+- សូមទាក់ទងមកកាន់យើងខ្ញុំបើសិនជាអ្នកចង់យកវីដេអូទៅផុសបន្ត បើសិនយើងឃើញលោកអ្នកយកទៅប្រើប្រាស់ដោយគ្មានការអនុញ្ញាតិយើងនឹងចាត់វិធានការលើគេហទំព័រនោះ។
+==================================================
+            `)
+        </script>
+    </div>
+</body>
+
+</html>
